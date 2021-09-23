@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --marginheader: 0%;
+    --marginulheader: -8px;
+    --marginright: -8px;
+    --marginleft: -8px;
+    --paddingul1: 20px 5px 20px 5px;
+    --paddingul2: 2.5px 5px 2.5px 5px;
+    --paddingul3: 10px 5px 10px 5px;
+    --fontsize: 18px;
+    --navfondo1: rgb(255, 255, 255);
+    --navfondo2: rgb(91, 65, 128);
+    --navfondo3: rgb(0, 0, 0);
+    --navfondohover1: rgb(179, 179, 179);
+    --navfondohover2: rgb(80, 57, 112);
+    --navfondohover3: rgb(51, 51, 51);
+    --navcolor: rgb(255, 255, 255);
+    --navorden: display: inline;
+    --modedivnav: display: block;
+    --colortextlinav: rgb(0, 0, 0);
+    --colortextlinav2: rgb(255, 255, 255);
+    --asidefondo: rgb(87, 11, 11);
+    --textnav: 'Gluten', cursive;
+}
+
+#encabezado {
+    margin-top: var(--marginheader);
+    margin-right: var(--marginright);
+    margin-left: var(--marginleft);
+}
+
+nav {
+    color: var(--navcolor);
+    font-weight: bold;
+}
+
+ul.ulnav1 {
+    background-color: var(--navfondo1);
+    margin-top: var(--marginulheader);
+    margin-bottom: var(--marginheader);
+    padding: var(--paddingul1);
+}
+
+ul.ulnav2 {
+    background-color: var(--navfondo2);
+    margin-top: var(--marginheader);
+    margin-bottom: var(--marginheader);
+    padding: var(--paddingul2);
+}
+
+ul.ulnav3 {
+    background-color: var(--navfondo3);
+    margin-top: var(--marginheader);
+    margin-bottom: var(--marginheader);
+    padding: var(--paddingul3);
+    box-shadow: rebeccapurple 0px 2.5px 15px;
+}
+
+li.c1 {
+    display: var(--navorden);
+    padding: var(--paddingul1);
+}
+
+li.c2 {
+    display: var(--navorden);
+    padding: var(--paddingul2);
+}
+
+li.c2:hover {
+    background-color: var(--navfondohover2);
+}
+
+li.c3 {
+    display: var(--navorden);
+    padding: var(--paddingul3);
+}
+
+li.c3:hover {
+    background-color: var(--navfondohover3);
+}
+
+li a.o1 {
+    color: var(--colortextlinav);
+    font-family: var(--textnav);
+    text-decoration: none;
+}
+
+li a.o2 {
+    color: var(--colortextlinav2);
+    font-family: var(--textnav);
+    text-decoration: none;
+}
+
+li a.o3 {
+    color: var(--colortextlinav2);
+    font-family: var(--textnav);
+    text-decoration: none;
+}
+
+#imobj1 {
+    font-size: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow: rebeccapurple -2.5px -2.5px, rgb(0, 0, 0) 2.5px 2.5px;
+}
+
+#logo {
+    color: rgb(206, 206, 206);
+}
+
+ul.ulaside {
+    background-color: var(--asidefondo);
+}
+
+@media only screen and (min-width:0px) and (max-width:250px) {}
+
+@media (orientation: portrait) {}
+
+@media (orientation: landscape) {}
+
+@media print {
+    header,
+    aside {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {}
+
+
+/*h1 {
+    animation: girar 0.3s infinite linear;
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #h1 {
+        animation: none;
+    }
+}hacer animaciones y que no funcionen si no le gustan*/
+
+/*
+    :hover ---------> si se mueve el mouse sobre esa estiqueta
+    :active --------> si se da clic sobre esa etiqueta
+    :visited -------> para darle estilo a un enlace ya visitado
+    :target --------> edita lo que esté seleccionado
+    :not(etiqueta)--> lo que no sea esa etiquta se le hace lo quese desee
+    :empty ---------> edita la etiqueta si esta vacia
+    :first-child ---> selecciona primer hijo de un elemento
+    :last-child ----> selecciona ultimo hijo de un elemento
+    nth.child(n) ---> selecciona el numero de elemento que uno le de
+    numero mas n = cada ese numero de veces se repite 
+    even = pares
+    odd = impares
+    :first-of-type -> primero del tipo seleccionado
+    :last-of-type --> ultimo del tipo seleccionado
+*/
+
+/*
+    filter: blur($px); -------> da efecto borroso a una imagen
+            opacity($%); -----> da efecto transparente
+            brightness($%); --> brillo
+            hue-rotate($deg) -> rota la paleta de colores
+            
+*/
